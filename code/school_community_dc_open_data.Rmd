@@ -1,0 +1,33 @@
+---
+title: "School and Community Indicators from DC Open Data"
+author: 
+  - "Nathan Alexander, PhD"
+  - "Center for Applied Data Science and Analytics"
+  - "Howard University"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true  # Enable floating TOC in the sidebar
+    number_sections: true
+    theme: cerulean
+    always_allow_html: true
+    self_contained: true
+editor_options:
+  markdown:
+    wrap: sentence
+---
+
+```{r setup, include=T, warning=F, results=F, message=F}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(weights)
+library(dplyr)
+library(stringr)
+library(here)
+here::i_am("school_community_dc_open_data.Rmd")
+```
+
+# Data
